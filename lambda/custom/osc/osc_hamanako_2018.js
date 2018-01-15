@@ -1,3 +1,7 @@
+exports.getEventTitle = function(){
+  return "OSC浜名湖2018";
+}
+
 // タイムテーブルは以下のURLより
 // https://www.ospn.jp/osc2018-hamanako/modules/eventrsv/?id=1&noform=1
 exports.getTimetable = function(){

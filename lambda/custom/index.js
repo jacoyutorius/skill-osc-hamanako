@@ -1,5 +1,6 @@
 'use strict';
 var Alexa = require("alexa-sdk");
+const OSC_HAMANAKO = require("./osc/osc_hamanako_2018");
 process.env.TZ = 'Asia/Tokyo'
 
 exports.handler = function(event, context) {
@@ -52,8 +53,9 @@ var handlers = {
       " or 'alexa, ask hello world my name is awesome Aaron'");
   },
   'AscNextSessionIntent': function() {
-    var d = new Date();
-    console.log(d);
-    this.emit(":tell", "hi! OSC!" + d);
+    var now = new Date()
+    var ret = OSC_HAMANAKO.getNextSession(now);
+    console.log(ret);
+    this.emit(":tell", OSC_HAMANAKO.getEventTitle() + ret.title);
   }
 };
