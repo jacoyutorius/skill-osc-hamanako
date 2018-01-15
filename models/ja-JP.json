@@ -1,0 +1,49 @@
+{
+  "interactionModel":{
+      "languageModel":{
+          "invocationName":"OSC",
+          "types":[],
+          "intents":[
+              {
+                "name": "AMAZON.CancelIntent",
+                "samples": []
+              },
+              {
+                "name": "AMAZON.HelpIntent",
+                "samples": []
+              },
+              {
+                "name": "AMAZON.StopIntent",
+                "samples": []
+              },
+              {
+                  "name":"HelloWorldIntent",
+                  "slots":[
+                  ],
+                  "samples":[
+                      "hello",
+                      "say hello",
+                      "say OSC"
+                  ]
+              },
+              {
+                  "name":"AscNextSessionIntent",
+                  "samples":[
+                      "次のセッションは",
+                      "次は",
+                      "次の講演は"
+                  ]
+              },
+              {
+                "name" : "AskTimetableIntent",
+                "slots": [],
+                "samples": [
+                  "タイムテーブルを教えて",
+                  "タイムテーブルは",
+                  "タイムテーブル"
+                ]
+              }
+          ]
+      }
+  }
+}

@@ -2,15 +2,14 @@
   "skillManifest": {
     "publishingInformation": {
       "locales": {
-        "en-US": {
-          "summary": "Sample Short Description",
+        "ja-JP": {
+          "summary": "OSC浜名湖2018",
           "examplePhrases": [
-            "Alexa open hello world",
-            "Alexa tell hello world I am Jeff",
-            "Alexa tell hello world my name is Peter"
+            "アレクサ、OSCの次のセッションは",
+            "アレクサ、タイムテーブルを教えて"
           ],
           "name": "skill-osc-hamanako",
-          "description": "Sample Full Description"
+          "description": "OSC浜名湖2018"
         }
       },
       "isAvailableWorldwide": true,
